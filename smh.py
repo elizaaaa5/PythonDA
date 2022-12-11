@@ -22,7 +22,7 @@ df''')
 # In[2]:
 
 
-#df = pd.read_csv('movies.csv')
+df = pd.read_csv('movies.csv')
 #df
 
 
