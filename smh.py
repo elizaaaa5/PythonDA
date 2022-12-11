@@ -11,27 +11,21 @@ import numpy as np
 import streamlit as st
 
 
-# Let's display my dataset
 st.title('IMDB Top 250 Movies')
-st.header('IMDB Top 250 Movies')
-st.markdown('IMDB Top 250 Movies')
-st.subheader('IMDB Top 250 Movies')
+st.header('This dashboard will present the information about rating of movies, which were made over a century period between 1920 and 2020')
+st.markdown('''Let's display my dataset''')
 st.code('''df = pd.read_csv('movies.csv)
 df''')
+df = pd.read_csv('movies.csv')
 
 # In[2]:
+st.subheader('''Let's display some statistics, which include  mean, median, standard deviation and some other information of numerical fields''')
 
-
-df = pd.read_csv('movies.csv')
-#df
-
-
-# Let's display some statistics, which include  mean, median, standard deviation and some other information of numerical fields
-
-# There are some information about rank
+st.markdown('''There are some information about rank''')
 
 # In[3]:
-
+st.code('''print(df['rank'].describe())
+print(df['rank'].median())''')
 
 print(df['rank'].describe())
 print(df['rank'].median())
