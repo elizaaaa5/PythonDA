@@ -16,7 +16,8 @@ st.title('IMDB Top 250 Movies')
 st.header('IMDB Top 250 Movies')
 st.markdown('IMDB Top 250 Movies')
 st.subheader('IMDB Top 250 Movies')
-st.code()
+st.code('''df = pd.read_csv('movies.csv)
+df''')
 
 # In[2]:
 
