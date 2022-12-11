@@ -22,8 +22,8 @@ df''')
 # In[2]:
 
 
-df = pd.read_csv('movies.csv')
-df
+#df = pd.read_csv('movies.csv')
+#df
 
 
 # Let's display some statistics, which include  mean, median, standard deviation and some other information of numerical fields
