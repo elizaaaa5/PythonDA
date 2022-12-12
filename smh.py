@@ -6,12 +6,24 @@ import streamlit as st
 
 st.title('IMDB Top 250 Movies')
 st.header(
-    'This dashboard will present the information about rating of movies, which were made over a century period between 1920 and 2020')
+    'This dashboard will present the information about movies, which were made over a century period between 1921 and 2022')
 st.markdown('''Let's display my dataset''')
 st.code('''df = pd.read_csv('movies.csv)
 df''')
 df = pd.read_csv('movies.csv')
 df
+st.subheader('Features:')
+st.markdown('''
+rank - Movie Rank as per IMDB rating \n
+id - Movie ID\n
+name - Name of the Movie\n
+year - Year of movie release\n
+imdb_votes - Number of people who voted for the IMDB rating\n
+imdb_rating - Rating of the Movie\n
+certificate - Movie Certification\n
+duration - Duration of the Movie\n
+genre - Genre of the Movie\n
+cast_id - ID of cast memeber who have worked on the movie''')
 st.text("")
 st.text("")
 
